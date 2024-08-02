@@ -26,6 +26,25 @@
   border: none;
 }
 
+.btn-secondary {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-senary);
+  background-color: #ffffff;
+  padding: 10px 24px;
+  border: none;
+
+}
+
+:root {
+  --color-primary: rgba(58, 58, 58, 1);
+  --color-secondary: rgba(24, 25, 31, 1);
+  --color-tertiary: rgba(0, 0, 0, 0.87);
+  --color-quaternary: rgba(94, 99, 102, 1);
+  --color-quinary: rgba(120, 120, 133, 1);
+  --color-senary: rgba(224, 44, 109, 0.87);
+}
+
 /* Navbar */
 .nav-bar {
   display: flex;
@@ -43,18 +62,19 @@
 .nav-bar h3 {
   font-size: 1.5rem;
   font-weight: bold;
+  color: var(--color-primary);
 }
 
 .nav-options p,
 .nav-options i {
   font-size: 1rem;
   font-weight: 600;
+  color: var(--color-primary);
 }
 
 /* Banner section */
 .banner {
   display: flex;
-  border: 2px solid red;
   gap: 8rem;
   justify-content: center;
 }
@@ -67,7 +87,7 @@
 }
 
 .banner .text-content h1 {
-  color: rgba(58, 58, 58, 1);
+  color: var(--color-primary);
   font-size: 3.25rem;
   font-weight: bold;
   line-height: 4.3rem;
@@ -78,6 +98,7 @@
   font-size: 1rem;
   font-weight: 600;
   margin: 16px 0;
+  color: var(--color-primary);
 }
 
 .banner button {
@@ -100,13 +121,96 @@
 }
 
 .overlay-image {
-  top: 40px;
-  left: 20px;
+  top: 25px;
+  left: 25px;
   position: absolute;
-  width: 400px;
+  width: 430px;
   z-index: 2;
 }
 
+/* Partners section */
 .partners {
   margin: 5rem auto;
+}
+
+/* Popular section */
+.popular {
+  width: 85%;
+}
+
+.popular h1 {
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.popular .description {
+  color: var(--color-primary);
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 1.875rem;
+}
+
+.card {
+  width: 300px;
+  height: 442px;
+  padding: 17px 14px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.164);
+  margin-bottom: 1.875rem;
+}
+
+.card img {
+  width: 300px;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+.card .price {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-tertiary);
+  margin-bottom: 0.5rem;
+}
+
+.card .ratings {
+  color: lightseagreen;
+  margin-bottom: 1.5rem;
+}
+
+.card .rating-number {
+  color: var(--color-quaternary);
+  font-size: 1.14rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.card .shipping {
+  color: var(--color-quinary);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.btn-below{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3.2rem;
 }
