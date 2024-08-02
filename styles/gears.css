@@ -5,3 +5,37 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Shared Styles */
+* {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 34px;
+}
+
+.nav-bar h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-options p, .nav-options i{
+  font-size: 1rem;
+  font-weight: 600;
+}
