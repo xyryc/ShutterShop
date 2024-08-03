@@ -335,6 +335,7 @@ footer .social i {
 
 /* Media Queries */
 @media screen and (max-width: 576px) {
+  /* Navbar */
   #navbar-icon {
     display: inline;
   }
@@ -348,7 +349,54 @@ footer .social i {
   }
 
   .nav-bar {
+    padding-top: 2rem;
     border: 2px solid red;
-    padding-top: 2.1rem;
+  }
+
+  /* Banner section */
+  .container {
+    padding-top: 2rem;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .background-image {
+    width: 100%;
+  }
+
+  .overlay-image {
+    width: 100%;
+    left: 0;
+    top: 40px;
+  }
+
+  .banner .text-content{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .banner .text-content h1 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .banner .text-content p {
+    width: 100%;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .banner button{
+    width: 60%;
+    margin: 0 auto;
   }
 }
