@@ -7,25 +7,24 @@
 }
 
 /* Scrollbar */
-body::-webkit-scrollbar{
-	width: 10px;
-  
+body::-webkit-scrollbar {
+  width: 10px;
 }
 
-body::-webkit-scrollbar-track-piece{
-	background-color: #FFF;
+body::-webkit-scrollbar-track-piece {
+  background-color: #fff;
 }
 
-body::-webkit-scrollbar-thumb{
-	background-color: #CBCBCB;
-	outline: 2px solid #FFF;
-	outline-offset: -2px;
-	border: .1px solid #B7B7B7;
+body::-webkit-scrollbar-thumb {
+  background-color: #cbcbcb;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border: 0.1px solid #b7b7b7;
   border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb:hover{
-	background-color: #909090;
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
   border-radius: 10px;
 }
 
@@ -68,6 +67,9 @@ body::-webkit-scrollbar-thumb:hover{
   --color-quaternary: rgba(94, 99, 102, 1);
   --color-quinary: rgba(120, 120, 133, 1);
   --color-senary: rgba(224, 44, 109, 0.87);
+  --color-septenary: rgba(10, 8, 38, 1);
+  --color-octonary: rgba(108, 108, 108, 1);
+  --color-nonary: rgba(217, 219, 225, 1);
 }
 
 /* Navbar */
@@ -242,4 +244,76 @@ body::-webkit-scrollbar-thumb:hover{
   display: flex;
   justify-content: flex-end;
   margin-top: 3.2rem;
+}
+
+/* Featured section */
+.featured {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.featured-image-container {
+  border-radius: 0.6rem;
+}
+
+.featured-text-container {
+  width: 50%;
+}
+
+.featured-text-container h1 {
+  color: var(--color-septenary);
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.featured-text-container p {
+  width: 92%;
+  color: var(--color-octonary);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  letter-spacing: .1px;
+  margin: 1rem 0;
+}
+
+/* Footer section */
+footer {
+  margin-top: 6.25rem;
+  background-color: var(--color-septenary);
+}
+
+footer .text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+footer h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer p {
+  color: var(--color-nonary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 3px 0;
+}
+
+footer .social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+footer .social i {
+  color: white;
+  background-color: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 50%;
 }
