@@ -323,3 +323,32 @@ footer .social i {
   padding: 0.5rem;
   border-radius: 50%;
 }
+
+/* Hide content */
+.hide {
+  display: none;
+}
+
+#navbar-icon {
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+  #navbar-icon {
+    display: inline;
+  }
+
+  .nav-options p {
+    display: none;
+  }
+
+  #search-icon {
+    display: none;
+  }
+
+  .nav-bar {
+    border: 2px solid red;
+    padding-top: 2.1rem;
+  }
+}
