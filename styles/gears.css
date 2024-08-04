@@ -420,4 +420,32 @@ footer .social i {
   .card:hover {
     transform: scale(1.02);
   }
+
+  /* Featured */
+  .featured {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .featured-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featured-text-container h1 {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .featured-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .featured-image-container img {
+    width: 100%;
+  }
 }
