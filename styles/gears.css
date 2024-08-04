@@ -350,7 +350,6 @@ footer .social i {
 
   .nav-bar {
     padding-top: 2rem;
-    border: 2px solid red;
   }
 
   /* Banner section */
@@ -377,7 +376,7 @@ footer .social i {
     top: 40px;
   }
 
-  .banner .text-content{
+  .banner .text-content {
     width: 100%;
     justify-content: center;
   }
@@ -395,8 +394,30 @@ footer .social i {
     font-weight: 500;
   }
 
-  .banner button{
+  .banner button {
     width: 60%;
     margin: 0 auto;
+  }
+
+  /* Partners */
+  .partners {
+    display: none;
+  }
+
+  /* Popular */
+  .popular {
+    width: 90%;
+  }
+
+  .popular .description {
+    width: 90%;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card:hover {
+    transform: scale(1.02);
   }
 }
