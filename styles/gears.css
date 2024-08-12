@@ -160,6 +160,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Partners section */
 .partners {
   margin: 5rem auto;
+  text-align: center;
 }
 
 /* Popular section */
